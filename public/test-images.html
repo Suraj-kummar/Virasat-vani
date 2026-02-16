@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test - Virasat Vani</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: system-ui;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .item {
+            background: #1e293b;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .status {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .success {
+            color: #10b981;
+        }
+
+        .error {
+            color: #ef4444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product Images Test</h1>
+    <p>Testing if all product images load correctly...</p>
+
+    <div class="grid">
+        <div class="item">
+            <h3>Pottery Vase</h3>
+            <img src="/product_pottery_vase.png" alt="Pottery Vase"
+                onload="this.nextElementSibling.innerHTML='✓ Loaded'"
+                onerror="this.nextElementSibling.innerHTML='✗ Failed to load'">
+            <div class="status">Loading...</div>
+        </div>
+
+        <div class="item">
+            <h3>Kathputli</h3>
+            <img src="/product_kathputli.png" alt="Kathputli" onload="this.nextElementSibling.innerHTML='✓ Loaded'"
+                onerror="this.nextElementSibling.innerHTML='✗ Failed to load'">
+            <div class="status">Loading...</div>
+        </div>
+
+        <div class="item">
+            <h3>Mojari</h3>
+            <img src="/product_mojari.png" alt="Mojari" onload="this.nextElementSibling.innerHTML='✓ Loaded'"
+                onerror="this.nextElementSibling.innerHTML='✗ Failed to load'">
+            <div class="status">Loading...</div>
+        </div>
+
+        <div class="item">
+            <h3>Jharokha</h3>
+            <img src="/product_jharokha.png" alt="Jharokha" onload="this.nextElementSibling.innerHTML='✓ Loaded'"
+                onerror="this.nextElementSibling.innerHTML='✗ Failed to load'">
+            <div class="status">Loading...</div>
+        </div>
+
+        <div class="item">
+            <h3>Saree</h3>
+            <img src="/product_saree.png" alt="Saree" onload="this.nextElementSibling.innerHTML='✓ Loaded'"
+                onerror="this.nextElementSibling.innerHTML='✗ Failed to load'">
+            <div class="status">Loading...</div>
+        </div>
+    </div>
+</body>
+
+</html>
