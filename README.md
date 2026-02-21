@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Virasat-Vani Logo](public/virasat_vani_logo.png)
-
+ 
 **Experience Indian Heritage Crafts through AI-powered storytelling and immersive shopping**
 
 [![Built with React](https://img.shields.io/badge/React-19.2-61dafb?logo=react)](https://react.dev/)
